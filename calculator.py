@@ -7,22 +7,35 @@ try:
         print("_" * 26)
         print("the square root of "+str(number)+" = "+str(result))
     else:
-        if 1==1:
+        if operator == "+":
             number2 = float(input("enter another number: "))
-            if operator == "+":
-                result = number + number2
-            elif operator == "-":
-                result = number - number2
-            elif operator == "*":
-                result = number * number2
-            elif operator == "/":
-                result = number / number2
-            elif operator == ("^" or "power"):
-                result = number ** number2
-            else:
-                print("invalid operator.")
-        print("_"*26)
-        print(str(number)+" "+operator+" "+str(number2)+" = "+str(result))
+            result = number + number2
+            print("_" * 26)
+            print(str(number) + " " + operator + " " + str(number2) + " = " + str(result))
+        elif operator == "-":
+            number2 = float(input("enter another number: "))
+            result = number - number2
+            print("_" * 26)
+            print(str(number) + " " + operator + " " + str(number2) + " = " + str(result))
+        elif operator == "*":
+            number2 = float(input("enter another number: "))
+            result = number * number2
+            print("_" * 26)
+            print(str(number) + " " + operator + " " + str(number2) + " = " + str(result))
+        elif operator == "/":
+            number2 = float(input("enter another number: "))
+            result = number / number2
+            print("_" * 26)
+            print(str(number) + " " + operator + " " + str(number2) + " = " + str(result))
+        elif operator == ("^" or "power"):
+            number2 = float(input("enter another number: "))
+            result = number ** number2
+            print("_" * 26)
+            print(str(number) + " " + operator + " " + str(number2) + " = " + str(result))
+        else:
+            print("_" * 26)
+            print("invalid operator.")
 except:
+    print("_" * 26)
     print("that's not a valid number!!")
 
